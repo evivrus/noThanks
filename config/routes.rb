@@ -5,6 +5,9 @@ SecondApp::Application.routes.draw do
 
 	root :to => "home#index"
 
+  match 'user/ajax' => 'user#ajax'
+  match 'user/ajax2' => 'user#ajax2'
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

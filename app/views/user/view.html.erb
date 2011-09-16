@@ -2,6 +2,20 @@
 
 <p>
   <%= @user.email %>
+  <a id='sender' href="">send ajax</a>
+  <br>
+  <div class="ajax">
+    <%= @nouse[:num] %>
+  </div>
+
+  <p></p>
+
+
+  <%= link_to('sender2','ajax2',{:remote => true, :class => 'sender2', :method => 'get'}) %>
+  <br>
+  <div class="ajax2">
+  </div>
+
 
 </p>
 
